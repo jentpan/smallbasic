@@ -1,0 +1,10 @@
+TextWindow.top=0
+TextWindow.left=0
+TextWindow.BackgroundColor= "white"
+TextWindow.ForegroundColor= "black"
+TextWindow.Title="CopyFile"
+TextWindow.Show()
+srcPath = "C:\Users\Student\Desktop\smallbasic_ex3\file1\pertinent.txt"           
+dstPath = "C:\Users\Student\Desktop\smallbasic_ex3\file2"  ' Path of the destination file
+File.CopyFile(srcPath, dstPath)
+TextWindow.WriteLine("A file has been copied into your folder #2")

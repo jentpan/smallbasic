@@ -1,0 +1,36 @@
+TextWindow.top=0
+TextWindow.left=0
+TextWindow.BackgroundColor= "white"
+TextWindow.ForegroundColor= "black"
+TextWindow.Title="Times"
+TextWindow.Show()
+TextWindow.WriteLine("Welcome to Watches International. ")
+TextWindow.WriteLine("At our main headquarters, located in Portland, OR, the time is currently: ")
+printtime()
+Sub printtime
+TextWindow.Write(Clock.time)
+IF (9< Clock.hour < 21) then
+  TextWindow.Write(" Portland branch is open. ")
+EndIf
+If (9> Clock.hour >21) then
+   TextWindow.Write(" Portland branch is closed. ")
+EndIf
+TextWindow.Pause()
+TextWindow.Clear()
+EndSub
+TextWindow.Write("Our London branch, is")
+IF (17< Clock.hour < 7) then
+  TextWindow.Write(" open. ")
+EndIf
+If (17> Clock.hour > 7) then
+   TextWindow.Write(" closed. ")
+EndIf
+TextWindow.Pause()
+TextWindow.Clear()
+TextWindow.Write("Our New York branch, is")
+IF (12< Clock.hour < 24) then
+  TextWindow.Write(" open. ")
+EndIf
+IF (12> Clock.hour > 24) then
+  TextWindow.Write(" open. ")
+EndIf

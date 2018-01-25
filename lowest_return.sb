@@ -1,0 +1,24 @@
+TextWindow.top=0
+TextWindow.left=0
+TextWindow.BackgroundColor= "white"
+TextWindow.ForegroundColor= "blue"
+TextWindow.Title="Lowest Returns"
+TextWindow.Show()
+TextWindow.WriteLine("Hello. My function is to compare two numbers and tell you which is the lowest. Please enter your first number here:")
+TextWindow.Write("")
+num1= textwindow.ReadNumber()
+TextWindow.Pause()
+TextWindow.Clear()
+TextWindow.WriteLine("Please enter your second number here:")
+TextWindow.Write("")
+num2= TextWindow.ReadNumber()
+TextWindow.Pause()
+TextWindow.Clear()
+If (num1<num2) then
+  TextWindow.Write(num1 +" is the lowest of the two numbers." )
+  EndIf
+If (num1>num2) then
+  TextWindow.Write(num2 +" is the lowest of the two numbers.")
+EndIf
+
+  

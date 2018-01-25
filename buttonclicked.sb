@@ -1,0 +1,32 @@
+GraphicsWindow.Show()
+GraphicsWindow.BackgroundColor="cadetblue"
+GraphicsWindow.BrushColor="lightcyan"
+GraphicsWindow.FontSize=24
+GraphicsWindow.width=600
+GraphicsWindow.height=400
+currenttime=(clock.hour+8)+":" +Clock.Minute+":"+Clock.Second
+GraphicsWindow.DrawBoundText(100,100,600,"Current time in London: "+currenttime)
+GraphicsWindow.DrawBoundText(100,150,600"Our London branch is:")
+GraphicsWindow.BrushColor="gold"
+srcPath = "C:\Users\Student\Desktop\smallbasic_ex3\file1\pertinent.txt"           
+dstPath = "C:\Users\Student\Desktop\smallbasic_ex3\file2"  ' Path of the destination file
+IF (17> Clock.hour > 7) then
+  GraphicsWindow.DrawBoundText(400,150,600"OPEN ")
+EndIf
+If (17< Clock.hour < 7) then
+GraphicsWindow.DrawBoundText(400,150,600"CLOSED ")
+Controls.buttonclicked=buttonclicked
+GraphicsWindow.FontSize=16
+GraphicsWindow.BrushColor="steelblue"
+closebutton=controls.AddButton("CLICK TO COPY", 230,190,)
+endif
+Sub buttonclicked
+  lastbutton=controls.LastClickedButton
+  If lastbutton=closebutton Then
+    File.CopyFile(srcPath, dstPath)
+  EndIf
+  EndSub
+  
+    
+ 
+    

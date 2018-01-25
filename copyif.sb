@@ -1,0 +1,14 @@
+TextWindow.top=0
+TextWindow.left=0
+TextWindow.BackgroundColor= "white"
+TextWindow.ForegroundColor= "black"
+TextWindow.Title="Copy_File_During_Close_Hrs"
+TextWindow.Show()
+srcPath = "C:\Users\Student\Desktop\smallbasic_ex3\file1\pertinent.txt"           
+dstPath = "C:\Users\Student\Desktop\smallbasic_ex3\file2"  ' Path of the destination file
+IF (17>clock.hour >7)then
+  File.CopyFile(srcPath, dstPath)
+  TextWindow.WriteLine("Our London branch, is current closed so a list will automatically be copied into your small basic folder.")
+EndIf
+
+
